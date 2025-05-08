@@ -3,7 +3,6 @@
     title: String!
     content: String!
     bannerUrl: String
-    like: Int
     userId: String!
     author: String
     createdAt: String
@@ -26,6 +25,6 @@
   type Mutation {
     createBlog(title: String!, content: String!, bannerUrl: String): Blog
     deleteBlog(id: ID!): Boolean! 
-    updateBlog(id: ID!, title: String!, content: String!): Blog! 
+    updateBlog(id: ID!, title: String!, content: String!,bannerUrl: String): Blog! 
   }
 

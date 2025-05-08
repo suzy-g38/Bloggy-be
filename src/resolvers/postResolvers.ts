@@ -60,7 +60,7 @@ export default {
       await Blog.findByIdAndDelete(id);
       return true;
     },
-    updateBlog: async (_, { id, title, content }: { id: string; title: string; content: string }, { userId }) => {
+    updateBlog: async (_, { id, title, content, bannerUrl }: { id: string; title: string; content: string,bannerUrl: string; }, { userId }) => {
       const blog = await Blog.findById(id);
       if (!blog) {
         throw new Error('Blog not found');
@@ -70,7 +70,7 @@ export default {
       }
       const updatedBlog = await Blog.findByIdAndUpdate(
         id,
-        { title, content, updatedAt: new Date().toISOString(), updatedBy: userId },
+        { title, content, bannerUrl, updatedAt: new Date().toISOString(), updatedBy: userId },
         { new: true }
       );
       return updatedBlog;
