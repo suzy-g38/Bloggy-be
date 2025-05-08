@@ -1,0 +1,82 @@
+
+# Node.js and npm
+node_modules/
+npm-debug.log
+yarn-error.log
+package-lock.json
+yarn.lock
+.pnpm-lock.yaml
+
+# Build Output (Frontend)
+dist/
+build/
+*.tsbuildinfo
+
+# Build Output (Backend)
+backend/dist/
+backend/build/
+
+# Environment Variables
+.env
+.env.local
+.env.development
+.env.test
+.env.production
+
+# Dependency Caches
+.pnpm-store/
+.eslintcache
+.prettierrc.cache
+
+# IDE and Editor Files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# OS Generated Files
+.DS_Store
+Thumbs.db
+
+# Testing and Coverage
+coverage/
+*.lcov
+test-results/
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Prisma (Backend)
+backend/prisma/dev.db
+backend/prisma/dev.db-journal
+backend/prisma/migrations/
+
+# Temporary Files
+*.tmp
+*.temp
+*.swp
+*.swo
+
+# Production Build Artifacts
+*.prod.js
+*.prod.js.map
+
+# TypeScript Cache
+*.tsbuildinfo
+
+# React-Specific
+.parcel-cache/
+.storybook/
+storybook-static/
+
+# Other
+*.bak
+*.gho
+*.orig
+*.rej
+*.dump
+*.stackdump
